@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Usando Seletor do DOM</h1>
+    <ul>
+        <li>java</li>
+        <li>Python</li>
+        <li>Nodejs</li>
+    </ul>
+
+    <div id="conteudo"  name = "divconteudo" class ="mensagem">
+    </div>
+
+    <div name = "divconteudo" class = "mensagem">
+    </div>
+
+    <div name = "divconteudo" class = "mensagem">
+    </div>
+
+    <span id="novospan" class = "novo">
+
+    </span>
+
+    <div class="mensagem">
+
+    </div>
+</body>
+<script>
+    elemento0 = document.getElementsByTagName("li")[0];
+    elemento0.style.color = "blue"
+
+    elemento1 = document.getElementsByTagName("li")[1];
+    elemento1.style.background = "red"
+
+    elemento2 = document.getElementsByTagName("li")[2]
+    elemento2.innerText = "SprigBoot"
+
+    elementoDiv = document.getElementById("conteudo");
+    elementoDiv.innerText = "<p> Estou colocando a tag para dentro da div </p>"
+
+    elementoDiv = document.getElementsByName("divconteudo")[1];
+    elementoDiv.style.color = "blue"
+    elementoDiv.innerText = "Estou colocando um texto"
+
+    elementoDivClass = document.getElementsByClassName("mensagem")[2];
+    elementoDivClass.style.color = "red"
+    elementoDivClass.innerText = "testando esse Get"
+
+
+   elementoSpan = document.querySelector("#novospan");
+   elementoSpan.style.color = "blue"
+   elementoSpan.innerText = "texto"
+
+
+   elementoSeletor = document.querySelectorAll(".mensagem")[3];
+   elementoSeletor.innerText = "<p> Texto incluido </p>"
+
+
+
+</script>
+</html>

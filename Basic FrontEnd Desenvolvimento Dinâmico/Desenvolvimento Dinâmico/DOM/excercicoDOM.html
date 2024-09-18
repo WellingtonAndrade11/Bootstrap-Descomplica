@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com o DOM</title>
+</head>
+<body>
+    <ul id="lista">
+        <li> Produtos</li>
+    </ul>
+
+    <ul class="listatimes">
+        <li></li>
+    </ul>
+</body>
+<script>
+    var elemento = document.createElement("div");
+    elemento.innerText = "incluíndo texto na div";
+    elemento.style.backgroundColor = "lightgreen"
+    document.body.append(elemento);
+
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "Quem somos";
+    lista.appendChild(li);
+
+
+    var Times = ["Flamengo","São Paulo", "Corinthians", "fluminense"];
+    
+    var listadetimes = document.querySelector("ul.listatimes");
+
+    for(var i = 0; i < Times.length; i++){
+        var time = Times[i];
+        var listItem = document.createElement("li");
+        listItem.innerText = time;
+        listItem.style.border = "1px solid blue"
+        listadetimes.appendChild(listItem)
+    }
+</script>
+</html>

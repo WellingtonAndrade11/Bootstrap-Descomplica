@@ -1,0 +1,64 @@
+body {
+    font-weight: 400;
+    font-family: lato, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 2.2em;
+    color: #818181;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f4511e;
+    
+    
+}
+
+
+section, footer{
+    margin: 40px;
+}
+
+h1 {
+   
+    text-align: center;
+    font-size: 63px;
+    color: #303030;
+    padding: 15px;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+
+
+#Pacotes .figuras {
+    display: inline-flex;
+    align-items: center;
+    text-align: top;
+    
+}
+
+.img-figuras{
+    height: 300px;
+    width: 400px;
+    text-align:end;
+}
+
+.carousel-item { max-width: 2000px; max-height: 800px }
+
+.carousel-caption h5{
+    font-size: 80px;
+    color: #ffc107;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+select {
+    color: white;
+}
+
+
